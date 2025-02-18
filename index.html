@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting for the Car webpage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       <div class="logo">
+        <h1><img src="Cardeal (1).png" alt = "Car logo"> Welcome to Wisedeals Company </h1>
+        </div>
+        <p>We help you find your ideal car! Please fill out this form to help us match you with the perfect vehicle.</p>
+    </header> 
+
+    <div class ="form-container">
+        <form action = "#" method=" GET"></form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            <h2>1. Required Information </h2>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Paul Gred" required><br><br>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="abc@email.com"required><br><br>
+    
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="000-000-0000" required><br><br>
+    
+            <label for="location">Location (City/State):</label>
+            <input type="text" id="location" name="location" placeholder="ABC.., IN" required ><br><br>
+
+            <label for="license">License Number:</label>
+            <input type="text" id="license" name="license" placeholder="Enter license number" required><br><br>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Car Preferences</legend>
+            <h2>2. Manufacturer</h2>
+            <label for = "manufacturer"> Select manufacturer: </label>
+            <select id = "manufacturer" name="manufacturer" required>
+                <option value="Toyota"> Toyota </option>
+                <option value="Ford"> Ford </option>
+                <option value="Honda"> Honda</option>
+                <option value="BW"> BW </option>
+            </select> <br></br>
+             
+            <label for="brand-model">Preferred Brand/Model (Optional):</label>
+            <input type="text" id="brand-model" name="brand-model">
+    
+            <label for="year-range">Preferred Year Range:</label>
+            <input type="number" id="year-from" name="year-from" min="2000" max="2025" placeholder="From">
+            <input type="number" id="year-to" name="year-to" min="2000" max="2025" placeholder="To">
+    
+            <label for="color">Color</label>
+            <input type="color" id="colour" name="color" required rows="5" cols="1" ><br><br>
+    
+    
+            <label for="driveOptions">Drive Options</label><br>
+            <input type="checkbox" id="4wd" name="driveOptions" value="4wd">
+            <label for="4wd">4 Wheel Drive</label><br>
+            <input type="checkbox" id="awd" name="driveOptions" value="awd">
+            <label for="awd">All Wheel Drive</label><br>
+            <input type="checkbox" id="fwd" name="driveOptions" value="fwd">
+            <label for="fwd">Front Wheel Drive</label><br><br>
+    
+
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" placeholder="Any other specifications..." rows="4" cols="50"></textarea><br><br>
+            </fieldset>
+
+      <fieldset>
+        <h2>3.Features and Specification</h2>
+        <legend>Additional Features</legend>
+        
+  
+        <label for="fuelType">Fuel Type</label><br>
+        <input type="radio" id="petrol" name="fuelType" value="petrol" required>
+        <label for="petrol">Petrol</label><br>
+        <input type="radio" id="diesel" name="fuelType" value="diesel">
+        <label for="diesel">Diesel</label><br>
+        <input type="radio" id="electric" name="fuelType" value="electric">
+        <label for="electric">Electric</label><br><br>
+
+
+        <label for="transmission">Transmission</label><br>
+        <input type="radio" id="automatic" name="transmission" value="automatic" required>
+        <label for="automatic">Automatic</label><br>
+        <input type="radio" id="manual" name="transmission" value="manual">
+        <label for="manual">Manual</label><br><br>
+        
+      </fieldset>
+
+
+      <input type="submit" value="Submit Ideal Car Profile">
+    </form>
+</body>
+</html>
